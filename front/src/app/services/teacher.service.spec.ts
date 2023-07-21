@@ -24,8 +24,6 @@ describe('TeacherService', () => {
       { id: '2', name: 'Jane Smith' },
       { id: '3', name: 'Michael Johnson' },
     ];
-
-    // Mock the HTTP response for the 'all()' function
     jest
       .spyOn(service['httpClient'], 'get')
       .mockReturnValueOnce(of(mockTeachers));
@@ -39,7 +37,6 @@ describe('TeacherService', () => {
     const mockTeacherId = '1';
     const mockTeacher = { id: '1', name: 'John Doe' };
 
-    // Mock the HTTP response for the 'detail()' function
     jest
       .spyOn(service['httpClient'], 'get')
       .mockReturnValueOnce(of(mockTeacher));
