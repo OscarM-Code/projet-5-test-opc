@@ -22,4 +22,17 @@ public class SignupRequest {
   @NotBlank
   @Size(min = 6, max = 40)
   private String password;
+
+  public SignupRequest() {
+  }
+
+  public SignupRequest(String email, String firstName, String lastName, String password) {
+    this.email = email;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.password = password;
+  }
+
+  // Getters et setters générés par Lombok @Data, donc pas besoin de les définir
+  // ici explicitement
 }
