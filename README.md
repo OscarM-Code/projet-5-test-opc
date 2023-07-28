@@ -96,4 +96,4 @@ cd backend
 ```
 
 
-L'application frontend sera accessible à l'adresse **http://localhost:4200/** */, tandis que l'application backend sera accessible à **http://localhost:8080/** */.
+L'application frontend sera accessible à l'adresse **http://localhost:4200/** , tandis que l'application backend sera accessible à **http://localhost:8080/** .
